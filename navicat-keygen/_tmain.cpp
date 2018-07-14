@@ -10,9 +10,11 @@
 #include <openssl/rsa.h>
 #include <openssl/pem.h>
 #include <openssl/des.h>
-
+//https://www.npcglib.org
 #pragma comment(lib, "Crypt32.lib")
-#pragma comment(lib, "libcrypto.lib")
+#pragma comment(lib, "libcryptoMT.lib")
+#pragma comment(lib, "wsock32.lib")
+#pragma comment(lib, "ws2_32.lib")
 
 #define NAVICAT_12
 #define NAVICAT_CHS
@@ -187,7 +189,7 @@ int _tmain(int argc, TCHAR* argv[]) {
 
         RequestCode += temp;
     }
-    
+
     BYTE EncryptedRequestData[1024] = { };
     DWORD EncryptedRequestDataLength = sizeof(EncryptedRequestData);
     if (!CryptStringToBinaryA(RequestCode.c_str(), NULL, CRYPT_STRING_BASE64, EncryptedRequestData, &EncryptedRequestDataLength, NULL, NULL)) {

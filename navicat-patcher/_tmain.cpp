@@ -6,7 +6,13 @@
 #include <openssl/rsa.h>
 #include <openssl/pem.h>
 
-#pragma comment(lib, "libcrypto.lib")
+//#pragma comment(lib, "libcrypto.lib")
+#pragma comment(lib, "libcryptoMT.lib")
+
+#pragma comment(lib, "wsock32.lib")
+#pragma comment(lib, "ws2_32.lib")
+#pragma comment(lib, "Crypt32.lib")
+
 
 BOOL BackupNavicat(PTSTR NavicatFileName) {
     TCHAR new_NavicatFileName[1024] = { };
