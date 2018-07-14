@@ -71,8 +71,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>F:\Work2019\openssl-1.1.0f-vs2017\include;$(IncludePath)</IncludePath>
-    <LibraryPath>F:\Work2019\openssl-1.1.0f-vs2017\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>../lib/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../lib/lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -81,8 +81,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>F:\Work2019\openssl-1.1.0f-vs2017\include;$(IncludePath)</IncludePath>
-    <LibraryPath>F:\Work2019\openssl-1.1.0f-vs2017\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>../lib/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../lib/lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
